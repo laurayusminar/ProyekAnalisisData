@@ -40,7 +40,7 @@ def analyze_geographical_distribution(df, cutoff_date):
     seller_distribution = df_filtered['seller_state'].value_counts()
     return customer_distribution, seller_distribution
 
-all_df = pd.read_csv("all_data.csv")
+all_df = pd.read_csv("data/all_data.csv")
 
 datetime_columns = [
     "order_purchase_timestamp",
